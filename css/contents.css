@@ -1,0 +1,34 @@
+ .contents_box{
+    top: 58px;
+    left: 150px;
+    height: 2942px; /* 3000-58 */
+    /* width: 1200px; */
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    /* 透明度 */
+    opacity: 0.8;
+    /* 边框 */
+    /* border: 5px solid #ccc; */
+    /* 圆角 */
+    border-radius: 10px;
+    display: none;
+}
+.home_content{
+    display: block;
+}
+.game_content{
+    display: none;
+}
+.anime_content{
+    display: none;
+}
+.video_content{
+    display: none;
+}
+.project_content{
+    display: none;
+}
+.investor_content{
+    display: none;
+}

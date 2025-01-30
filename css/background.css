@@ -1,0 +1,17 @@
+.background_box{
+    width: 100%;
+    height: 100%;
+    top: -12px;
+    left: 0;
+    position: relative;
+    z-index: 0;
+    
+}
+
+
+.background_box .background_img{
+    width: 100%;
+    position: relative;
+}
+
+
