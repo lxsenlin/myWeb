@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="./css/background.css">
     <!-- 内容样式 -->
     <link rel="stylesheet" href="./css/contents.css">
-    
+    <!-- 导入轮播图样式 -->
+    <link rel="stylesheet" href="./includes/broadcastJs-master/src/css/broadcast-me.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     
@@ -41,27 +45,116 @@
             <!-- 添加反馈栏 -->
             <div class="feedback_box">
                 <input type="text" class="feedback_input" placeholder="请输入您的反馈内容"> 
-                <button class="feedback_btn">提交</button>
+                <button class="feedback_btn niceButton5">提交</button>
                 
             </div>
         </div>
     </div>
     <!-- 内容 -->
     
-    
-    <div class="home_content contents_box w"></div>
-    <div class="game_content contents_box w"></div>
-    <div class="anime_content contents_box w"></div>
+    <!-- 首页 -->
+    <div class="home_content contents_box w">
+        <!-- 轮播图 -->
+        <div class="broadcast_box"></div>
+        <!-- 最新资讯 -->
+        <div class="news_content">
+            <p class="news_title">最新资讯</p>
+            <ul class="news_list flex-center">
+                <li><a href="https://www.hltv.org/news/40957/iem-katowice-grand-final-as-it-happened">25年IEM卡托维兹总决赛结果出炉！</a></li>
+                <li><a href="https://www.bilibili.com/video/BV1N64meKE5R/">Summer Pockets动画即将在25年4月播出！</a></li>
+                <li><a href="https://baike.baidu.com/item/%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF%EF%BC%9A%E9%BB%91%E5%A4%9C%E5%90%9B%E4%B8%B4/65207871">艾尔登法环 黑夜君临即将作为多人游戏正式登陆！</a></li>
+                <li><a href="https://movie.douban.com/subject/35712589/">《魔法使之夜剧场版》距制作决定已过4年，为何仍未正式展出？</a></li>
+                <li><a href="https://baike.baidu.com/item/%E6%9C%88%E5%A7%AC%20Remake/62596809">都是月亮惹的祸？月姬里线为何至今仍无消息？</a></li>
+                <li><a href="https://wiki.biligame.com/arknights/%E5%87%80%E7%BD%AA%E4%BD%9C%E6%88%98">《明日方舟》危机合约净罪作战已经启动！</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="game_content contents_box w">
+        <!-- 现在正在玩的游戏介绍 -->
+         <div class="playing_content">
+            <!-- 文字介绍 -->
+            <p class="playing_title">主播正在游玩的游戏！</p>
+             <!-- 图片介绍 -->
+            <a href=""><img src="./images/game_content/darksoul.jpg" alt="" class="playing_img"></a>
+            <div class="playing_text">
+                <br>
+                <a href="https://store.steampowered.com/app/374320/DARK_SOULS_III/">黑暗之魂3</a>
+                <br>
+                <br>
+                动作角色扮演类游戏《黑暗之魂3》是由From Software公司开发的一款动作角色扮演类游戏，是《黑暗之魂》系列的游戏之一，先于2016年3月24日在日本地区全平台发行，随后于2016年4月12日在全球范围内发行。
+                <br>
+                <br>
+                游戏的主要舞台为洛斯里克王国。在那里，玩家肩负着阻止末世来临的使命，而末世则是由于火之纪元和那些前代黑暗印记持有者之间的冲突所引发的。为了应对这一事态，玩家需要去面对薪王——那些曾经传过火的英雄。无论结局如何，世界始终会在光与暗之间轮转。
+            </div>
+            
+         </div>
+         <!-- 推荐游戏 -->
+         <div class="recommend_content">
+            <p class="recommend_title">推荐游戏</p>
+            <ul class="recommend_list" id="recommend_list_01">
+                <!-- 生成20个类似的li标签 -->
+                <!-- <li class="recommend_item">
+                    <div>
+                        <a href="#"><img src="./images/game_content/game1.png" alt=""></a>
+                        <a href="#"><p class="recommend_name">游戏名称</p></a>
+                    </div>
+                </li> -->
+
+            </ul>
+             <!-- 翻页按钮 -->
+            <div class="page_btn">
+                <button class="niceButton4" id="recommend_prev_page">上一页</button>
+                <button class="niceButton4" id="recommend_page_1">1</button>
+                <button class="niceButton4" id="recommend_page_2">2</button>
+                <button class="niceButton4" id="recommend_page_3">3</button>
+                <button class="niceButton4">...</button>
+                <button class="niceButton4" id="recommend_next_page">下一页</button>
+            </div>
+        </div>
+    </div>
+    <div class="anime_content contents_box w">
+        <!-- 轮播图 -->
+        <div class="anime_broadcast_box">
+            <div class="rotas">
+                <div class="sel">
+                    <img src="./images/anime_content/1.jpg">
+                    <div></div>
+                </div>
+                <div>
+                    <img src="./images/anime_content/2.jpg">
+                    <div></div>
+                </div>
+                <div>
+                    <img src="./images/anime_content/3.jpg">
+                    <div></div>
+                </div>
+                <div>
+                    <img src="./images/anime_content/4.jpg">
+                    <div></div>
+                </div>
+                <div>
+                    <img src="./images/anime_content/5.jpg">
+                    <div></div>
+                </div>
+                <div>
+                    <img src="./images/anime_content/6.jpg">
+                    <div></div>
+                </div>
+            </div>
+            <div class="changeBtns">
+                <div class="left">&lt;</div>
+                <div class="right">&gt;</div>
+            </div>
+        </div>    
+    </div>
     <div class="video_content contents_box w"></div>
     <div class="project_content contents_box w"></div>
     <div class="investor_content contents_box w"></div>
 
 
     <!--顶部导航end-->
-
     <!-- 背景 -->
     <div class="background_box">
-        
         <img src="./images/background.png" alt="" class="background_img">
     </div>
 
@@ -72,8 +165,18 @@
     <!-- ajax请求 -->
     <script src="./js/ajax.js"></script>
     <!-- 发送输入框内容到服务器 -->
-     <script src="./js/phpmail.js"></script>
-
-
+    <script src="./js/phpmail.js"></script>
+    <!-- 导入轮播图js -->
+    <script src="./includes/broadcastJs-master/src/js/broadcast-me.js"></script>
+    <!-- 调用轮播图 -->
+    <script src="./js/broadcast_use.js"></script>
+    <!-- 推荐游戏列表li导入 -->
+    <script src="./js/recommend_game_list.js"></script>
+    <!-- 导入动画轮播图js -->
+     <script src="./js/anime_broadcast.js"></script>
+    <script>
+        
+    </script>
+    
 </body>
 </html>
