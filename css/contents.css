@@ -1,0 +1,316 @@
+.contents_box {
+    top: 58px;
+    left: 150px;
+    height: 2942px; /* 3000-58 */
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* 使用 rgba 设置背景透明度 */
+    border-radius: 10px;
+    display: none;
+}
+.home_content{
+    display: block;
+}
+.home_content .broadcast_box{
+    position: absolute;
+    /* position: relative; */
+    margin-top: 30px;
+    margin-left: 40px;
+    height:  400px;
+    width: 60%;
+}
+.home_content .news_content{
+    border-radius: 10%;
+    position: absolute;
+    /* position: relative; */
+    margin-top: 30px;
+    margin-left:  67%;
+    height:  400px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+}
+.home_content .news_title{
+    position : absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+.home_content .flex-center {
+    display: flex;
+    flex-direction: column; /* 让<li>元素垂直排列 */
+    justify-content: center; /* 在交叉轴（这里是垂直方向）居中对齐 */
+    height: 100%; /* 确保有高度以使centering生效，根据实际情况调整 */
+    gap: 30px; /* 设置<li>标签之间的间距 */
+    padding-top: 15px; /* 使内容整体下移 */
+    padding-left: 10px; /* 使内容整体左移 */
+    
+}
+/* 链接样式字体 */
+.home_content .flex-center a {
+    color: #000000;
+    text-decoration: none;
+
+}
+.home_content .flex-center a:hover {
+    color: #ff3c00;
+    text-decoration: underline;
+}
+
+.game_content{
+    display: none;
+}
+.game_content .playing_content{
+    /* 设置弹性盒子 */
+    /* display: flex; */
+    width: 90%;
+    height: 300px;
+    margin: 30px auto;
+    /* background-color: #e1e1e1; */
+    /* 边框 */
+    /* border: 1px solid #000000; */
+    /* 圆角 */
+    border-radius: 10px;
+    
+}
+.game_content .playing_content .playing_title{
+    float: left;
+    width: 40%;
+    height: 10%;
+    /* 左对齐 */
+    text-align: left;
+    /* 字体大小 */
+    font-size: 24px;
+    /* 字体颜色 */
+    color: #000000;
+    /* 字体粗细 */
+    font-weight: semibold;
+    /* 行高 */
+    line-height: 1.5;
+}
+.game_content .playing_content a{
+    /* 大小 */
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+.game_content .playing_content a:hover{
+    color: #ff3c00;
+    text-decoration: underline;
+}
+.game_content .playing_content .playing_text{
+    float: left;
+    width: 40%;
+    height: 80%;
+
+    /* 左对齐 */
+    text-align: left;
+}
+.game_content .playing_content .playing_img{
+    float: right;
+    width: 50%;
+    height: 100%;
+    /* 右对齐 */
+    text-align: right;
+    /* 圆角 */
+    border-radius: 10px;
+}
+.game_content .recommend_content{
+    margin: 30px auto;
+    width: 90%;
+    height: 76%;
+}
+.game_content .recommend_content .recommend_title{
+    /* 居中 */
+    text-align: center;
+    /* 字体大小 */
+    font-size: 24px;
+    /* 字体颜色 */
+    color: #000000;
+    /* 字体粗细 */
+    font-weight: semibold;
+    /* 行高 */
+    line-height: 1.5;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.game_content .recommend_content .recommend_list{
+    position: block;
+    /* 边框 */
+    /* border: 1px solid #000000; */
+    /* 圆角 */
+    border-radius: 10px;
+    /* 间距 */
+    gap: 20px;
+}
+.game_content .recommend_content .recommend_list .recommend_item{
+    /* position: block; */
+    float: left;
+    width: 25%;
+    /* height: 150px; */
+    margin-bottom: 100px;
+}
+.game_content .recommend_content .recommend_list .recommend_item img{
+    /* 图片大小期望217.800px*300.000px */
+    position: relative;
+     /* 圆角 */
+    border-radius: 20px;
+    /* 宽度 */
+    width: 80%;
+    /* 高度 */
+    height: 300px;
+    /* 居中 */
+    left: 10%;
+}
+.game_content .recommend_content .recommend_list .recommend_item p{
+    text-align: center;
+    /* 字体大小 */
+    font-size: 22px;
+    /* 字体颜色 */
+    color: #000000;
+    /* 字体粗细 */
+    font-weight: semibold;
+    /* 行高 */
+    line-height: 1.5;
+    padding-top: 20px;
+}
+.game_content .recommend_content .page_btn{
+    padding: 0% 23%;
+}
+/* 推荐游戏翻页按钮样式开始 */
+.niceButton4{
+    background-color: skyblue;
+    border: none;
+    border-radius: 12px;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+.niceButton4:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),
+    0 17px 50px 0 rgba(0,0,0,.19);
+}
+/* 游戏翻页按钮样式结束 */
+.anime_content{
+    display: none;
+}
+/* 动画轮播图样式开始 */
+.anime_content .anime_broadcast_box {
+    margin: 0 auto;
+    width: 80%;
+    height: 20%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.anime_content .anime_broadcast_box .rotas {
+    width: 500px;
+    height: 340px;
+    transition: all .6s linear;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-5deg) rotateY(2deg);
+    user-select: none;
+}
+
+.anime_content .anime_broadcast_box .rotas > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(240, 240, 240);
+    transform: scale(1.1);
+}
+
+.anime_content .anime_broadcast_box .rotas > div div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(30, 30, 30, .65);
+    transition: all .6s linear;
+}
+
+.anime_content .anime_broadcast_box .rotas > div.sel div {
+    background-color: rgba(30, 30, 30, 0);
+}
+
+.anime_content .anime_broadcast_box .rotas > div:nth-of-type(1) {
+    transform: translateZ(500px);
+}
+
+.anime_content .anime_broadcast_box .rotas > div:nth-of-type(2) {
+    transform: rotateY(-60deg) translateZ(500px);
+}
+
+.anime_content .anime_broadcast_box .rotas > div:nth-of-type(3) {
+    transform: rotateY(-120deg) translateZ(500px);
+}
+
+.anime_content .anime_broadcast_box .rotas > div:nth-of-type(4) {
+    transform: translateZ(-500px);
+}
+
+.anime_content .anime_broadcast_box .rotas > div:nth-of-type(5) {
+    transform: rotateY(120deg) translateZ(500px);
+}
+
+.anime_content .anime_broadcast_box .rotas > div:nth-of-type(6) {
+    transform: rotateY(60deg) translateZ(500px);
+}
+
+.anime_content .anime_broadcast_box .rotas img {
+    width: 100%;
+    height: 100%;
+}
+
+.anime_content .anime_broadcast_box .changeBtns {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.anime_content .anime_broadcast_box .changeBtns > div {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(170, 170, 170);
+    border: solid 1px;
+    cursor: pointer;
+    user-select: none;
+}
+/* 动画轮播图样式结束 */
+.video_content{
+    display: none;
+}
+.project_content{
+    display: none;
+}
+.investor_content{
+    display: none;
+}
